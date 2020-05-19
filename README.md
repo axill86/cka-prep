@@ -4,7 +4,7 @@ I'll try to collect notes and tasks which have been made during prepration to [C
 
 ## General information about the exam
 * Practice exam (not multi-select)
-* Current version is 1.8 (May 2020) [Circullum](https://github.com/cncf/curriculum)
+* Current version is 1.8 (May 2020) [Curriculum](https://github.com/cncf/curriculum)
 
 ## Materials used for preparation
 During my prepration I used following courses and guides:
