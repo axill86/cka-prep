@@ -146,3 +146,26 @@ let's expose service for created blog via command
 ```
 kubectl expose deployment ghost-blog --name=ghost-blog-service  --type=NodePort --port=2368 
 ```
+
+Now let's do our challenge a bit more interesting.
+
+## Network policies
+
+As for now, our cluster should contain something like following resources
+```
+NAME                              READY   STATUS    RESTARTS   AGE
+pod/ghost-blog-7f6b68f765-5r5bg   1/1     Running   0          31m
+pod/mysql-db                      1/1     Running   0          32m
+
+NAME                         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+service/ghost-blog-service   NodePort    10.106.201.250   <none>        2368:32688/TCP   98m
+service/kubernetes           ClusterIP   10.96.0.1        <none>        443/TCP          22d
+service/mysql-service        ClusterIP   10.105.95.3      <none>        3306/TCP         134m
+
+NAME                         READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ghost-blog   1/1     1            1           106m
+
+NAME                                    DESIRED   CURRENT   READY   AGE
+replicaset.apps/ghost-blog-7f6b68f765   1         1         1       106m
+```
+
