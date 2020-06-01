@@ -15,4 +15,9 @@ During my prepration I used following courses and guides:
 * [K8S the hard way guide](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 * [CKA prepration Udemy course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests)
 
+## Tasks in this repo
 
+* [Setup ghost blog](./tasks/ghost-blog/README.md) - setup simple ghost-blog with my-sql persistenc
+* [Grant access to new developer](./tasks/security/README.md) - create CSR and grant permission to accesss the cluster 
+* [Schedule on master](./tasks/master-only-node/README.md) - Use taints, toleratoins, selectors
+* [Use network policies](./tasks/network-policies/README.md) - Use network policies to access k8s dns
