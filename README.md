@@ -21,3 +21,4 @@ During my prepration I used following courses and guides:
 * [Grant access to new developer](./tasks/security/README.md) - create CSR and grant permission to accesss the cluster 
 * [Schedule on master](./tasks/master-only-node/README.md) - Use taints, toleratoins, selectors
 * [Use network policies](./tasks/network-policies/README.md) - Use network policies to access k8s dns
+* [API access from pod](./tasks/access-api-from-pod/README.md) - Direct access api from pod 
